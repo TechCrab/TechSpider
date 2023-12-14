@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+            padding: 30px;
+        }
+        li{
+            margin-top: 8px;
+            font-size: 20px;
+        }
+        a:hover{
+            color: red;
+        }
+       /* #first-row td:hover{
+        background-color: red;
+
+       }
+       #second-row td:hover{
+        background-color: blue
+
+       }#third-row td:hover{
+        background-color: greenyellow;
+
+       }#fourth-row td:hover{
+        background-color: orange;
+
+       }#fifth-row td:hover{
+        background-color: purple;
+
+       } */
+       tbody tr:nth-child(3n+1){
+        background-color:gray;
+       }
+       td:hover{
+        background-color: black;
+        color: white;
+       }
+
+    </style>
+</head>
+<body>
+
+   <center><u> <h2>User Management System</h2></u></center>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="first-row">
+                <td>1</td>
+                <td>John Doe</td>
+                <td>john.doe@example.com</td>
+                <td>Admin</td>
+                <td>Active</td>
+            </tr>
+            <tr id="second-row" >
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>jane.smith@example.com</td>
+                <td>Editor</td>
+                <td>Inactive</td>
+            </tr>
+            <tr id="third-row" >
+                <td>3</td>
+                <td>Bob Johnson</td>
+                <td>bob.johnson@example.com</td>
+                <td>User</td>
+                <td>Active</td>
+            </tr>
+            <tr id="fourth-row" >
+                <td>4</td>
+                <td>Alice Brown</td>
+                <td>alice.brown@example.com</td>
+                <td>Viewer</td>
+                <td>Inactive</td>
+            </tr>
+            <tr id="fifth-row" >
+                <td>5</td>
+                <td>Charlie Davis</td>
+                <td>charlie.davis@example.com</td>
+                <td>Admin</td>
+                <td>Active</td>
+            </tr>
+            <tr id="sixth-row" >
+                <td>6</td>
+                <td>alpha</td>
+                <td>alpha.davis@example.com</td>
+                <td>user</td>
+                <td>Active</td>
+            </tr>
+            <tr id="sevwn-row" >
+                <td>7</td>
+                <td>meta</td>
+                <td>meta.davis@example.com</td>
+                <td>Admin</td>
+                <td>Inactive</td>
+            </tr>
+            <tr id="eight-row" >
+                <td>8</td>
+                <td>charlie</td>
+                <td>charlie.davis@example.com</td>
+                <td>viewer</td>
+                <td>Active</td>
+            </tr>
+            <tr id="nine-row" >
+                <td>9</td>
+                <td>delta/td>
+                <td>delta.davis@example.com</td>
+                <td>Admin</td>
+                <td>Active</td>
+            </tr>
+            <tr id="tenth-row" >
+                <td  tabindex="1">10</td>
+                <td>jhony</td>
+                <td>jhony.davis@example.com</td>
+                <td>user</td>
+                <td  >Inactive</td>
+            </tr>
+        </tbody>
+    </table>
+
+<h2>Explanation:</h2>
+<ol>
+    <li>TABLE tag used to create the Structure table format</li>
+       <ul type="disc" >
+        <li>It contains two parts thead and tbody</li>
+    </ul>
+<li>THEAD used to identify the head section of the table without THEAD aslo we create our tables</li>
+<li>TBODY contains the every single data of the users</li>
+<li>TR tag is used to create the table rows</li>
+<li>TH tag is used to create the heading related contents and it also creats one coloumn(the text change bold format) </li>
+<li>TD tag is used to create table data in normal text format</li>
+</ol>
+<h3>CSS:</h3>
+<ol>
+    <li><b><a href="./table-pic.png" target="_blank">border-collapse: collapse-</a></b>used to merge the borders of the table </li>
+    <li><b>n-thchild() values</b></li>
+    <ul>
+        <li>odd</li>
+        <li>even</li>
+        <li><a href="./nthchild.png" target="_parent">3n+1</a></li>
+    </ul>
+    <li>HOVER is used to change the state of an element</li>
+</ol>
+<h4>ATTRIBUTES :</h4>
+<ol>
+    <li>TABINDEX-its used to pick the elements in the viewport just press the TAB button based on tabindex value it choose the element</li>
+    <li>ID-used to identify some unique values</li>
+</ol>
+<h2>COMBINATOR:</h2>
+<ol>
+    <li>DESUNDENT COMPINATOR(space) if we want to choose the child element that time we go for this combinators to fetch the particular element</li>
+    <ul>
+       <pre>
+        tbody tr:nth-child(3n+1){
+            background-color:gray;
+           }
+       </pre>
+       <li>here i was target the tbody tag and  using space then i target the tr tag which is the child of tbody tag</li>
+    </ul>
+   
+</ol>
+
+</body>
+</html>
